@@ -25,18 +25,10 @@ export const Item = styled.li`
 
 export const ItemWrapper = styled.li`
   padding: 28px 36px 36px;
-`;
-
-export const Button = styled.button`
-  width: 50px;
-  height: 30px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
-  :focus,
-  :hover {
-    box-shadow: 2px 8px 11px -2px rgba(0, 0, 0, 0.75);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const LogoImg = styled.img`
