@@ -11,6 +11,8 @@ import {
 } from './Items.styled';
 import Logo from '../../img/Logo.png';
 import Picture from '../../img/pictureComponent.png';
+import User from 'components/User';
+import Button from 'components/Button/Button';
 
 const Items = () => {
   console.log(datas);
@@ -29,10 +31,8 @@ const Items = () => {
 
             <ItemWrapper>
               <PictureComponent src={Picture} alt="PictureComponent" />
-
-              {user}
-              {tweets}
-              {followers}
+              <User user={user} tweets={tweets} followers={followers} />
+              <Button />
             </ItemWrapper>
           </Item>
         ))}
