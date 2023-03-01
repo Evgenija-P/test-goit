@@ -1,10 +1,10 @@
-import Item from 'components/Item';
+import Items from 'components/Items/Items';
 import { AppWrapper } from './App.styled';
 
 const App = () => {
   return (
     <AppWrapper>
-      <Item />
+      <Items />
     </AppWrapper>
   );
 };
