@@ -5,7 +5,7 @@ export const List = styled.ul`
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
   grid-row-gap: 1em;
 `;
 
@@ -21,6 +21,11 @@ export const Item = styled.li`
   );
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
+
+  :hover,
+  :focus {
+    transform: scale(1.05);
+  }
 `;
 
 export const ItemWrapper = styled.li`

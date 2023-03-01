@@ -20,4 +20,9 @@ export const Btn = styled.button`
   text-transform: uppercase;
 
   color: #373737;
+  border: none;
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
 `;
