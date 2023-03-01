@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "user": "Elon Reeve Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 2,
+    "user": "Caitlin Strickland",
+    "tweets": 153,
+    "followers": 100001,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 3,
+    "user": "Andrea Mosley",
+    "tweets": 562,
+    "followers": 999,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 4,
+    "user": "Esmond Mckinney",
+    "tweets": 100,
+    "followers": 100,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 5,
+    "user": "Kelly Jacobs",
+    "tweets": 779,
+    "followers": 100505,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 6,
+    "user": "Beverley Gardner",
+    "tweets": 479,
+    "followers": 1,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 7,
+    "user": "Jeffery Dorsey",
+    "tweets": 832,
+    "followers": 500,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 8,
+    "user": "Georgiana Bradley",
+    "tweets": 367,
+    "followers": 843,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 9,
+    "user": "Moses Watkins",
+    "tweets": 995,
+    "followers": 25036,
+    "avatar": "url.jpg"
+  },
+  {
+    "id": 10,
+    "user": "Lee Jefferson",
+    "tweets": 654,
+    "followers": 100253,
+    "avatar": "url.jpg"
+  }
+]
