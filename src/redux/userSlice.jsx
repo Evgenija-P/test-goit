@@ -24,6 +24,6 @@ const usersSlice = createSlice({
   },
 });
 
-export const { incrementFollowesr, decrementFollowesr, toggleButton } =
+export const { incrementFollowesr, decrementFollowesr } =
   usersSlice.actions;
 export const usersReducer = usersSlice.reducer;
