@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { UserList } from './User.styled';
 import Button from 'components/Button/Button';
 import ButtonActive from 'components/ButtonActive';
+import { incrementFollowesr, decrementFollowesr } from 'redux/userSlice';
 
-const User = ({ user, tweets, followers }) => {
-  const [clickButton, setClickButton] = useState(false);
+const User = ({ id, user, tweets, followers, buttonState }) => {
+  const dispatch = useDispatch();
+  // eslint-disable-next-line
   const [allFollowers, setAllFollowers] = useState(followers);
   const [currentFollovers, setCurrentFollovers] = useState(followers);
 
   useEffect(() => {
-    followersFormating(allFollowers);
-    console.log(allFollowers);
-  }, [allFollowers]);
+    followersFormating(followers);
+  }, [followers]);
 
   function dataIncrement() {
-    setAllFollowers(allFollowers + 1);
-    setClickButton(true);
+    dispatch(incrementFollowesr(id));
     followersFormating(allFollowers);
   }
 
   function dataDecrement() {
-    setAllFollowers(allFollowers - 1);
-    setClickButton(false);
+    dispatch(decrementFollowesr(id));
     followersFormating(allFollowers);
   }
 
@@ -56,7 +56,7 @@ const User = ({ user, tweets, followers }) => {
       <li>{user} </li>
       <li>{tweets} tweets</li>
       <li>{currentFollovers} followers</li>
-      {clickButton ? (
+      {buttonState ? (
         <ButtonActive dataDecrement={dataDecrement} />
       ) : (
         <Button dataIncrement={dataIncrement} />

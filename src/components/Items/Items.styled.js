@@ -28,7 +28,7 @@ export const Item = styled.li`
   }
 `;
 
-export const ItemWrapper = styled.li`
+export const ItemWrapper = styled.div`
   padding: 28px 36px 36px;
   display: flex;
   flex-direction: column;
