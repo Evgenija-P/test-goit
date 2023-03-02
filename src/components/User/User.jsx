@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { UserList } from './User.styled';
 import Button from 'components/Button/Button';
-import ButtonActive from 'components/ButtonActive';
+
 import { incrementFollowesr, decrementFollowesr } from 'redux/userSlice';
+import ButtonActive from 'components/ButtonActive/ButtonActive';
 
 const User = ({ id, user, tweets, followers, buttonState }) => {
   const dispatch = useDispatch();
